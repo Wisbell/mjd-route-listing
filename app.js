@@ -20,6 +20,7 @@ app.config(function($routeProvider){
         controller: "Route66Ctrl",
         templateUrl: "partials/route66.html"
     })
+    .otherwise({redirectTo: '/'})
 })
 
 
