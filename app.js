@@ -8,10 +8,10 @@ var app = angular.module('RouteApp', ['ngRoute'])
 // Set up views
 app.config(function($routeProvider){
     $routeProvider
-    // .when('/', {
-    //     controller: "",
-    //     templateUrl: ""
-    // })
+    .when('/', {
+        controller: "MainCtrl",
+        templateUrl: "partials/listroutes.html"
+    })
     .when('/blueridge', {
         controller: "BlueRidgeParkwayCtrl",
         templateUrl: "partials/blueridgeparkway.html"
@@ -26,9 +26,9 @@ app.config(function($routeProvider){
 // Controllers
 
 // Homepage Controller
-// app.controller('MainCtrl', function($scope){
-//     console.log('MainCtrl controller')
-// })
+app.controller('MainCtrl', function($scope){
+    console.log('MainCtrl controller')
+})
 
 
 
